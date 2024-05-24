@@ -6,19 +6,13 @@
     <script>
         function refreshImage() {
             var img = document.getElementById("liveImage");
-            // Generate a random number to append as a query parameter
-            var randomNumber = Math.floor(Math.random() * 1000000);
-            img.src = "https://jurvanwijk.github.io/live_image_viewer/t2rboard.png?random=" + randomNumber;
+            img.src = "https://jurvanwijk.github.io/live_image_viewer/t2rboard.png?timestamp=" + new Date().getTime();
         }
 
-        // Call refreshImage function once when the page loads
-        refreshImage();
-
-        // Refresh the image every 30 seconds
-        setInterval(refreshImage, 3000);
+        setInterval(refreshImage, 3000); // Refresh the image every 30 seconds
     </script>
 </head>
 <body>
-    <img id="liveImage" src="" alt="Live Image" style="max-width: 100%; height: auto;">
+    <img id="liveImage" src="https://jurvanwijk.github.io/live_image_viewer/t2rboard.png" alt="Live Image" style="max-width: 100%; height: auto;">
 </body>
 </html>
