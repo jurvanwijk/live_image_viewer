@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Image</title>
+    <script>
+        function refreshImage() {
+            var img = document.getElementById("liveImage");
+            img.src = "https://your-username.github.io/live-image-viewer/image.jpg?timestamp=" + new Date().getTime();
+        }
+
+        setInterval(refreshImage, 30000); // Refresh the image every 30 seconds
+    </script>
+</head>
+<body>
+    <img id="liveImage" src="https://jurvanwijk.github.io/live-image-viewer/image.jpg" alt="Live Image" style="max-width: 100%; height: auto;">
+</body>
+</html>
