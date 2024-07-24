@@ -2,18 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Live PDF Viewer</title>
+    <title>Live Image Viewer</title>
     <script>
-        function refreshPDF() {
-            var pdf = document.getElementById("livePDF");
-            pdf.src = "https://jurvanwijk.github.io/live_image_viewer/T2R_map_v2.pdf?timestamp=" + new Date().getTime();
+        function refreshImage() {
+            var img = document.getElementById("liveImage");
+            img.src = "https://jurvanwijk.github.io/live_image_viewer/T2R_map.png?timestamp=" + new Date().getTime();
         }
 
-        setInterval(refreshPDF, 90000); // Refresh the PDF every 3 seconds
+        setInterval(refreshImage, 60000); // Refresh the image every 90 seconds
     </script>
 </head>
 <body>
-    <iframe id="livePDF" src="https://jurvanwijk.github.io/live_image_viewer/T2R_map_v2.pdf" style="width: 100%; height: 100vh;" frameborder="0"></iframe>
+    <img id="liveImage" src="https://jurvanwijk.github.io/live_image_viewer/T2R_map.png" style="width: 100%; height: 100vh;" alt="Live Image Viewer">
 </body>
 </html>
+
 
