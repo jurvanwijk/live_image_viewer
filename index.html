@@ -6,14 +6,14 @@
     <script>
         function refreshPDF() {
             var pdf = document.getElementById("livePDF");
-            pdf.src = "https://jurvanwijk.github.io/live_image_viewer/T2R_map_v2_0.pdf?timestamp=" + new Date().getTime();
+            pdf.src = "https://jurvanwijk.github.io/live_image_viewer/T2R_map_v2.pdf?timestamp=" + new Date().getTime();
         }
 
         setInterval(refreshPDF, 30000); // Refresh the PDF every 3 seconds
     </script>
 </head>
 <body>
-    <iframe id="livePDF" src="https://jurvanwijk.github.io/live_image_viewer/T2R_map_v2_0.pdf" style="width: 100%; height: 100vh;" frameborder="0"></iframe>
+    <iframe id="livePDF" src="https://jurvanwijk.github.io/live_image_viewer/T2R_map_v2.pdf" style="width: 100%; height: 100vh;" frameborder="0"></iframe>
 </body>
 </html>
 
