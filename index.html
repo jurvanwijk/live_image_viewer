@@ -26,15 +26,21 @@
             img.src = "https://jurvanwijk.github.io/live_image_viewer/T2R_map.png?timestamp=" + new Date().getTime();
         }
 
-        setInterval(refreshImage, 30000); // Refresh the image every 30 seconds
+        window.onload = function() {
+            refreshImage(); // Initial load with a timestamp
+            setInterval(refreshImage, 30000); // Refresh the image every 30 seconds
+        };
     </script>
 </head>
 <body>
     <div class="image-container">
-        <img id="liveImage" src="https://jurvanwijk.github.io/live_image_viewer/T2R_map.png" alt="Live Image Viewer">
+        <img id="liveImage" src="" alt="Live Image Viewer">
     </div>
 </body>
 </html>
+
+
+
 
 
 
